@@ -1,0 +1,30 @@
+{
+  "name": "lunacon",
+  "description": "Icon set for Luna Framework",
+  "main": "index.js",
+  "authors": [
+    "Claude Myburgh <claude@designbycode.co.za>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Icons",
+    "Fonts"
+  ],
+  "homepage": "https://github.com/DesignByCode/Lunacon",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "lunacon/ai",
+    "lunacon/svgicons",
+    "lunacon/template",
+    "package.json",
+    "package-lock.json",
+    "Gulpfile.js",
+    "*.html",
+    "css",
+    "jade"
+  ]
+}

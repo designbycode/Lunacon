@@ -1,0 +1,631 @@
+// ==========================================
+// == Luna Framework
+// == AUTHOR: CLAUDE MYBURGH
+// == URL: http://lunaframework.co.za
+// ==========================================
+//
+//
+@font-face {
+	font-family: "Lunacon";
+	src: url('#{$font-path}/lunacon/Lunacon.eot');
+	src: url('#{$font-path}/lunacon/Lunacon.eot?#iefix') format('eot'),
+		url('#{$font-path}/lunacon/Lunacon.woff') format('woff'),
+		url('#{$font-path}/lunacon/Lunacon.ttf') format('truetype'),
+		url('#{$font-path}/lunacon/Lunacon.svg#Lunacon') format('svg');
+}
+
+@mixin lunacon-styles() {
+	display: inline-block;
+  font: normal normal normal 14px/1 "Lunacon";
+  font-size: inherit;
+  font-size: inherit;
+	line-height: $base-line-height;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.lunacon{
+	@include lunacon-styles();
+}
+
+.lunacon-fw{
+	width: 1.28571429em;
+  text-align: center;
+}
+
+
+  .lunacon--size-x1{
+    font-size: ($base-icon-size * 0) + $base-icon-size !important;
+    line-height: 1;
+  }
+
+  .lunacon--size-x2{
+    font-size: ($base-icon-size * 1) + $base-icon-size !important;
+    line-height: 1;
+  }
+
+  .lunacon--size-x3{
+    font-size: ($base-icon-size * 2) + $base-icon-size !important;
+    line-height: 1;
+  }
+
+  .lunacon--size-x4{
+    font-size: ($base-icon-size * 3) + $base-icon-size !important;
+    line-height: 1;
+  }
+
+  .lunacon--size-x5{
+    font-size: ($base-icon-size * 4) + $base-icon-size !important;
+    line-height: 1;
+  }
+
+
+
+
+
+$unicode-basket-solid: "\E001";
+
+$unicode-basket: "\E002";
+
+$unicode-bell-mute-solid: "\E003";
+
+$unicode-bell-mute: "\E004";
+
+$unicode-bell-solid: "\E005";
+
+$unicode-bell: "\E006";
+
+$unicode-cart-solid: "\E007";
+
+$unicode-cart: "\E008";
+
+$unicode-checkmark-small: "\E009";
+
+$unicode-checkmark: "\E00A";
+
+$unicode-chevron-down: "\E00B";
+
+$unicode-chevron-left: "\E00C";
+
+$unicode-chevron-right: "\E00D";
+
+$unicode-chevron-up: "\E00E";
+
+$unicode-close-small: "\E00F";
+
+$unicode-close: "\E010";
+
+$unicode-cloud-check-solid: "\E011";
+
+$unicode-cloud-check: "\E012";
+
+$unicode-cloud-solid: "\E013";
+
+$unicode-cloud: "\E014";
+
+$unicode-dailer-solid: "\E015";
+
+$unicode-dailer: "\E016";
+
+$unicode-gift: "\E017";
+
+$unicode-home-solid: "\E018";
+
+$unicode-home: "\E019";
+
+$unicode-lock-open: "\E01A";
+
+$unicode-lock: "\E01B";
+
+$unicode-microphone: "\E01C";
+
+$unicode-moon-solid: "\E01D";
+
+$unicode-moon: "\E01E";
+
+$unicode-navicon: "\E01F";
+
+$unicode-pencil: "\E020";
+
+$unicode-search-min: "\E021";
+
+$unicode-search-zoom: "\E022";
+
+$unicode-search: "\E023";
+
+$unicode-shield-lock-solid: "\E024";
+
+$unicode-shield: "\E025";
+
+$unicode-star-half-solid: "\E026";
+
+$unicode-star-half: "\E027";
+
+$unicode-star-solid: "\E028";
+
+$unicode-star: "\E029";
+
+$unicode-thumbs-down-solid: "\E02A";
+
+$unicode-thumbs-down: "\E02B";
+
+$unicode-thumbs-up-solid: "\E02C";
+
+$unicode-thumbs-up: "\E02D";
+
+$unicode-user-delete-solid: "\E02E";
+
+$unicode-user-delete: "\E02F";
+
+$unicode-user-solid: "\E030";
+
+$unicode-user: "\E031";
+
+$unicode-users-solid: "\E032";
+
+$unicode-users: "\E033";
+
+
+
+
+@function lunacon-char($filename){
+	$char: "";
+	
+		@if $filename == basket-solid{
+			$char: "\E001";
+		}
+
+	
+		@if $filename == basket{
+			$char: "\E002";
+		}
+
+	
+		@if $filename == bell-mute-solid{
+			$char: "\E003";
+		}
+
+	
+		@if $filename == bell-mute{
+			$char: "\E004";
+		}
+
+	
+		@if $filename == bell-solid{
+			$char: "\E005";
+		}
+
+	
+		@if $filename == bell{
+			$char: "\E006";
+		}
+
+	
+		@if $filename == cart-solid{
+			$char: "\E007";
+		}
+
+	
+		@if $filename == cart{
+			$char: "\E008";
+		}
+
+	
+		@if $filename == checkmark-small{
+			$char: "\E009";
+		}
+
+	
+		@if $filename == checkmark{
+			$char: "\E00A";
+		}
+
+	
+		@if $filename == chevron-down{
+			$char: "\E00B";
+		}
+
+	
+		@if $filename == chevron-left{
+			$char: "\E00C";
+		}
+
+	
+		@if $filename == chevron-right{
+			$char: "\E00D";
+		}
+
+	
+		@if $filename == chevron-up{
+			$char: "\E00E";
+		}
+
+	
+		@if $filename == close-small{
+			$char: "\E00F";
+		}
+
+	
+		@if $filename == close{
+			$char: "\E010";
+		}
+
+	
+		@if $filename == cloud-check-solid{
+			$char: "\E011";
+		}
+
+	
+		@if $filename == cloud-check{
+			$char: "\E012";
+		}
+
+	
+		@if $filename == cloud-solid{
+			$char: "\E013";
+		}
+
+	
+		@if $filename == cloud{
+			$char: "\E014";
+		}
+
+	
+		@if $filename == dailer-solid{
+			$char: "\E015";
+		}
+
+	
+		@if $filename == dailer{
+			$char: "\E016";
+		}
+
+	
+		@if $filename == gift{
+			$char: "\E017";
+		}
+
+	
+		@if $filename == home-solid{
+			$char: "\E018";
+		}
+
+	
+		@if $filename == home{
+			$char: "\E019";
+		}
+
+	
+		@if $filename == lock-open{
+			$char: "\E01A";
+		}
+
+	
+		@if $filename == lock{
+			$char: "\E01B";
+		}
+
+	
+		@if $filename == microphone{
+			$char: "\E01C";
+		}
+
+	
+		@if $filename == moon-solid{
+			$char: "\E01D";
+		}
+
+	
+		@if $filename == moon{
+			$char: "\E01E";
+		}
+
+	
+		@if $filename == navicon{
+			$char: "\E01F";
+		}
+
+	
+		@if $filename == pencil{
+			$char: "\E020";
+		}
+
+	
+		@if $filename == search-min{
+			$char: "\E021";
+		}
+
+	
+		@if $filename == search-zoom{
+			$char: "\E022";
+		}
+
+	
+		@if $filename == search{
+			$char: "\E023";
+		}
+
+	
+		@if $filename == shield-lock-solid{
+			$char: "\E024";
+		}
+
+	
+		@if $filename == shield{
+			$char: "\E025";
+		}
+
+	
+		@if $filename == star-half-solid{
+			$char: "\E026";
+		}
+
+	
+		@if $filename == star-half{
+			$char: "\E027";
+		}
+
+	
+		@if $filename == star-solid{
+			$char: "\E028";
+		}
+
+	
+		@if $filename == star{
+			$char: "\E029";
+		}
+
+	
+		@if $filename == thumbs-down-solid{
+			$char: "\E02A";
+		}
+
+	
+		@if $filename == thumbs-down{
+			$char: "\E02B";
+		}
+
+	
+		@if $filename == thumbs-up-solid{
+			$char: "\E02C";
+		}
+
+	
+		@if $filename == thumbs-up{
+			$char: "\E02D";
+		}
+
+	
+		@if $filename == user-delete-solid{
+			$char: "\E02E";
+		}
+
+	
+		@if $filename == user-delete{
+			$char: "\E02F";
+		}
+
+	
+		@if $filename == user-solid{
+			$char: "\E030";
+		}
+
+	
+		@if $filename == user{
+			$char: "\E031";
+		}
+
+	
+		@if $filename == users-solid{
+			$char: "\E032";
+		}
+
+	
+		@if $filename == users{
+			$char: "\E033";
+		}
+
+	
+	@return $char;
+}
+
+@mixin lunacon($filename, $insert: before, $extend: true){
+	&::#{$insert}{
+		@if $extend{
+			@extend .lunacon;
+		}@else {
+			@include lunacon-styles;
+		}
+		content: lunacon-char($filename);
+	}
+}
+
+.lunacon-basket-solid {
+	@include lunacon(basket-solid);
+}
+.lunacon-basket {
+	@include lunacon(basket);
+}
+.lunacon-bell-mute-solid {
+	@include lunacon(bell-mute-solid);
+}
+.lunacon-bell-mute {
+	@include lunacon(bell-mute);
+}
+.lunacon-bell-solid {
+	@include lunacon(bell-solid);
+}
+.lunacon-bell {
+	@include lunacon(bell);
+}
+.lunacon-cart-solid {
+	@include lunacon(cart-solid);
+}
+.lunacon-cart {
+	@include lunacon(cart);
+}
+.lunacon-checkmark-small {
+	@include lunacon(checkmark-small);
+}
+.lunacon-checkmark {
+	@include lunacon(checkmark);
+}
+.lunacon-chevron-down {
+	@include lunacon(chevron-down);
+}
+.lunacon-chevron-left {
+	@include lunacon(chevron-left);
+}
+.lunacon-chevron-right {
+	@include lunacon(chevron-right);
+}
+.lunacon-chevron-up {
+	@include lunacon(chevron-up);
+}
+.lunacon-close-small {
+	@include lunacon(close-small);
+}
+.lunacon-close {
+	@include lunacon(close);
+}
+.lunacon-cloud-check-solid {
+	@include lunacon(cloud-check-solid);
+}
+.lunacon-cloud-check {
+	@include lunacon(cloud-check);
+}
+.lunacon-cloud-solid {
+	@include lunacon(cloud-solid);
+}
+.lunacon-cloud {
+	@include lunacon(cloud);
+}
+.lunacon-dailer-solid {
+	@include lunacon(dailer-solid);
+}
+.lunacon-dailer {
+	@include lunacon(dailer);
+}
+.lunacon-gift {
+	@include lunacon(gift);
+}
+.lunacon-home-solid {
+	@include lunacon(home-solid);
+}
+.lunacon-home {
+	@include lunacon(home);
+}
+.lunacon-lock-open {
+	@include lunacon(lock-open);
+}
+.lunacon-lock {
+	@include lunacon(lock);
+}
+.lunacon-microphone {
+	@include lunacon(microphone);
+}
+.lunacon-moon-solid {
+	@include lunacon(moon-solid);
+}
+.lunacon-moon {
+	@include lunacon(moon);
+}
+.lunacon-navicon {
+	@include lunacon(navicon);
+}
+.lunacon-pencil {
+	@include lunacon(pencil);
+}
+.lunacon-search-min {
+	@include lunacon(search-min);
+}
+.lunacon-search-zoom {
+	@include lunacon(search-zoom);
+}
+.lunacon-search {
+	@include lunacon(search);
+}
+.lunacon-shield-lock-solid {
+	@include lunacon(shield-lock-solid);
+}
+.lunacon-shield {
+	@include lunacon(shield);
+}
+.lunacon-star-half-solid {
+	@include lunacon(star-half-solid);
+}
+.lunacon-star-half {
+	@include lunacon(star-half);
+}
+.lunacon-star-solid {
+	@include lunacon(star-solid);
+}
+.lunacon-star {
+	@include lunacon(star);
+}
+.lunacon-thumbs-down-solid {
+	@include lunacon(thumbs-down-solid);
+}
+.lunacon-thumbs-down {
+	@include lunacon(thumbs-down);
+}
+.lunacon-thumbs-up-solid {
+	@include lunacon(thumbs-up-solid);
+}
+.lunacon-thumbs-up {
+	@include lunacon(thumbs-up);
+}
+.lunacon-user-delete-solid {
+	@include lunacon(user-delete-solid);
+}
+.lunacon-user-delete {
+	@include lunacon(user-delete);
+}
+.lunacon-user-solid {
+	@include lunacon(user-solid);
+}
+.lunacon-user {
+	@include lunacon(user);
+}
+.lunacon-users-solid {
+	@include lunacon(users-solid);
+}
+.lunacon-users {
+	@include lunacon(users);
+}
+
+
+
+
+
+
+.lunacon-spin-animation {
+  animation: lunacon-spin 2s infinite linear;
+}
+
+
+.lunacon-flash-animation {
+  animation: lunacon-flash 1s infinite  ease-in-out;
+}
+
+
+@keyframes lunacon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+
+@keyframes lunacon-flash {
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
