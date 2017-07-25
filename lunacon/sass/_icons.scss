@@ -65,107 +65,121 @@
 
 
 
-$unicode-basket-solid: "\E001";
+$unicode-address-book: "\E001";
 
-$unicode-basket: "\E002";
+$unicode-basket-solid: "\E002";
 
-$unicode-bell-mute-solid: "\E003";
+$unicode-basket: "\E003";
 
-$unicode-bell-mute: "\E004";
+$unicode-bell-mute-solid: "\E004";
 
-$unicode-bell-solid: "\E005";
+$unicode-bell-mute: "\E005";
 
-$unicode-bell: "\E006";
+$unicode-bell-solid: "\E006";
 
-$unicode-cart-solid: "\E007";
+$unicode-bell: "\E007";
 
-$unicode-cart: "\E008";
+$unicode-cart-solid: "\E008";
 
-$unicode-checkmark-small: "\E009";
+$unicode-cart: "\E009";
 
-$unicode-checkmark: "\E00A";
+$unicode-checkmark-small: "\E00A";
 
-$unicode-chevron-down: "\E00B";
+$unicode-checkmark: "\E00B";
 
-$unicode-chevron-left: "\E00C";
+$unicode-chevron-down: "\E00C";
 
-$unicode-chevron-right: "\E00D";
+$unicode-chevron-left: "\E00D";
 
-$unicode-chevron-up: "\E00E";
+$unicode-chevron-right: "\E00E";
 
-$unicode-close-small: "\E00F";
+$unicode-chevron-up: "\E00F";
 
-$unicode-close: "\E010";
+$unicode-close-small: "\E010";
 
-$unicode-cloud-check-solid: "\E011";
+$unicode-close: "\E011";
 
-$unicode-cloud-check: "\E012";
+$unicode-cloud-check-solid: "\E012";
 
-$unicode-cloud-solid: "\E013";
+$unicode-cloud-check: "\E013";
 
-$unicode-cloud: "\E014";
+$unicode-cloud-solid: "\E014";
 
-$unicode-dailer-solid: "\E015";
+$unicode-cloud: "\E015";
 
-$unicode-dailer: "\E016";
+$unicode-dailer-solid: "\E016";
 
-$unicode-gift: "\E017";
+$unicode-dailer: "\E017";
 
-$unicode-home-solid: "\E018";
+$unicode-dashboard: "\E018";
 
-$unicode-home: "\E019";
+$unicode-download: "\E019";
 
-$unicode-lock-open: "\E01A";
+$unicode-gift: "\E01A";
 
-$unicode-lock: "\E01B";
+$unicode-home-solid: "\E01B";
 
-$unicode-microphone: "\E01C";
+$unicode-home: "\E01C";
 
-$unicode-moon-solid: "\E01D";
+$unicode-key: "\E01D";
 
-$unicode-moon: "\E01E";
+$unicode-lock-open: "\E01E";
 
-$unicode-navicon: "\E01F";
+$unicode-lock: "\E01F";
 
-$unicode-pencil: "\E020";
+$unicode-login: "\E020";
 
-$unicode-search-min: "\E021";
+$unicode-logout: "\E021";
 
-$unicode-search-zoom: "\E022";
+$unicode-microphone: "\E022";
 
-$unicode-search: "\E023";
+$unicode-moon-solid: "\E023";
 
-$unicode-shield-lock-solid: "\E024";
+$unicode-moon: "\E024";
 
-$unicode-shield: "\E025";
+$unicode-navicon: "\E025";
 
-$unicode-star-half-solid: "\E026";
+$unicode-pencil: "\E026";
 
-$unicode-star-half: "\E027";
+$unicode-search-min: "\E027";
 
-$unicode-star-solid: "\E028";
+$unicode-search-zoom: "\E028";
 
-$unicode-star: "\E029";
+$unicode-search: "\E029";
 
-$unicode-thumbs-down-solid: "\E02A";
+$unicode-shield-lock-solid: "\E02A";
 
-$unicode-thumbs-down: "\E02B";
+$unicode-shield: "\E02B";
 
-$unicode-thumbs-up-solid: "\E02C";
+$unicode-star-half-solid: "\E02C";
 
-$unicode-thumbs-up: "\E02D";
+$unicode-star-half: "\E02D";
 
-$unicode-user-delete-solid: "\E02E";
+$unicode-star-solid: "\E02E";
 
-$unicode-user-delete: "\E02F";
+$unicode-star: "\E02F";
 
-$unicode-user-solid: "\E030";
+$unicode-thumbs-down-solid: "\E030";
 
-$unicode-user: "\E031";
+$unicode-thumbs-down: "\E031";
 
-$unicode-users-solid: "\E032";
+$unicode-thumbs-up-solid: "\E032";
 
-$unicode-users: "\E033";
+$unicode-thumbs-up: "\E033";
+
+$unicode-upload: "\E034";
+
+$unicode-user-delete-solid: "\E035";
+
+$unicode-user-delete: "\E036";
+
+$unicode-user-solid: "\E037";
+
+$unicode-user: "\E038";
+
+$unicode-users-solid: "\E039";
+
+$unicode-users: "\E03A";
 
 
 
@@ -173,258 +187,293 @@ $unicode-users: "\E033";
 @function lunacon-char($filename){
 	$char: "";
 	
-		@if $filename == basket-solid{
+		@if $filename == address-book{
 			$char: "\E001";
 		}
 
 	
-		@if $filename == basket{
+		@if $filename == basket-solid{
 			$char: "\E002";
 		}
 
 	
-		@if $filename == bell-mute-solid{
+		@if $filename == basket{
 			$char: "\E003";
 		}
 
 	
-		@if $filename == bell-mute{
+		@if $filename == bell-mute-solid{
 			$char: "\E004";
 		}
 
 	
-		@if $filename == bell-solid{
+		@if $filename == bell-mute{
 			$char: "\E005";
 		}
 
 	
-		@if $filename == bell{
+		@if $filename == bell-solid{
 			$char: "\E006";
 		}
 
 	
-		@if $filename == cart-solid{
+		@if $filename == bell{
 			$char: "\E007";
 		}
 
 	
-		@if $filename == cart{
+		@if $filename == cart-solid{
 			$char: "\E008";
 		}
 
 	
-		@if $filename == checkmark-small{
+		@if $filename == cart{
 			$char: "\E009";
 		}
 
 	
-		@if $filename == checkmark{
+		@if $filename == checkmark-small{
 			$char: "\E00A";
 		}
 
 	
-		@if $filename == chevron-down{
+		@if $filename == checkmark{
 			$char: "\E00B";
 		}
 
 	
-		@if $filename == chevron-left{
+		@if $filename == chevron-down{
 			$char: "\E00C";
 		}
 
 	
-		@if $filename == chevron-right{
+		@if $filename == chevron-left{
 			$char: "\E00D";
 		}
 
 	
-		@if $filename == chevron-up{
+		@if $filename == chevron-right{
 			$char: "\E00E";
 		}
 
 	
-		@if $filename == close-small{
+		@if $filename == chevron-up{
 			$char: "\E00F";
 		}
 
 	
-		@if $filename == close{
+		@if $filename == close-small{
 			$char: "\E010";
 		}
 
 	
-		@if $filename == cloud-check-solid{
+		@if $filename == close{
 			$char: "\E011";
 		}
 
 	
-		@if $filename == cloud-check{
+		@if $filename == cloud-check-solid{
 			$char: "\E012";
 		}
 
 	
-		@if $filename == cloud-solid{
+		@if $filename == cloud-check{
 			$char: "\E013";
 		}
 
 	
-		@if $filename == cloud{
+		@if $filename == cloud-solid{
 			$char: "\E014";
 		}
 
 	
-		@if $filename == dailer-solid{
+		@if $filename == cloud{
 			$char: "\E015";
 		}
 
 	
-		@if $filename == dailer{
+		@if $filename == dailer-solid{
 			$char: "\E016";
 		}
 
 	
-		@if $filename == gift{
+		@if $filename == dailer{
 			$char: "\E017";
 		}
 
 	
-		@if $filename == home-solid{
+		@if $filename == dashboard{
 			$char: "\E018";
 		}
 
 	
-		@if $filename == home{
+		@if $filename == download{
 			$char: "\E019";
 		}
 
 	
-		@if $filename == lock-open{
+		@if $filename == gift{
 			$char: "\E01A";
 		}
 
 	
-		@if $filename == lock{
+		@if $filename == home-solid{
 			$char: "\E01B";
 		}
 
 	
-		@if $filename == microphone{
+		@if $filename == home{
 			$char: "\E01C";
 		}
 
 	
-		@if $filename == moon-solid{
+		@if $filename == key{
 			$char: "\E01D";
 		}
 
 	
-		@if $filename == moon{
+		@if $filename == lock-open{
 			$char: "\E01E";
 		}
 
 	
-		@if $filename == navicon{
+		@if $filename == lock{
 			$char: "\E01F";
 		}
 
 	
-		@if $filename == pencil{
+		@if $filename == login{
 			$char: "\E020";
 		}
 
 	
-		@if $filename == search-min{
+		@if $filename == logout{
 			$char: "\E021";
 		}
 
 	
-		@if $filename == search-zoom{
+		@if $filename == microphone{
 			$char: "\E022";
 		}
 
 	
-		@if $filename == search{
+		@if $filename == moon-solid{
 			$char: "\E023";
 		}
 
 	
-		@if $filename == shield-lock-solid{
+		@if $filename == moon{
 			$char: "\E024";
 		}
 
 	
-		@if $filename == shield{
+		@if $filename == navicon{
 			$char: "\E025";
 		}
 
 	
-		@if $filename == star-half-solid{
+		@if $filename == pencil{
 			$char: "\E026";
 		}
 
 	
-		@if $filename == star-half{
+		@if $filename == search-min{
 			$char: "\E027";
 		}
 
 	
-		@if $filename == star-solid{
+		@if $filename == search-zoom{
 			$char: "\E028";
 		}
 
 	
-		@if $filename == star{
+		@if $filename == search{
 			$char: "\E029";
 		}
 
 	
-		@if $filename == thumbs-down-solid{
+		@if $filename == shield-lock-solid{
 			$char: "\E02A";
 		}
 
 	
-		@if $filename == thumbs-down{
+		@if $filename == shield{
 			$char: "\E02B";
 		}
 
 	
-		@if $filename == thumbs-up-solid{
+		@if $filename == star-half-solid{
 			$char: "\E02C";
 		}
 
 	
-		@if $filename == thumbs-up{
+		@if $filename == star-half{
 			$char: "\E02D";
 		}
 
 	
-		@if $filename == user-delete-solid{
+		@if $filename == star-solid{
 			$char: "\E02E";
 		}
 
 	
-		@if $filename == user-delete{
+		@if $filename == star{
 			$char: "\E02F";
 		}
 
 	
-		@if $filename == user-solid{
+		@if $filename == thumbs-down-solid{
 			$char: "\E030";
 		}
 
 	
-		@if $filename == user{
+		@if $filename == thumbs-down{
 			$char: "\E031";
 		}
 
 	
-		@if $filename == users-solid{
+		@if $filename == thumbs-up-solid{
 			$char: "\E032";
 		}
 
 	
-		@if $filename == users{
+		@if $filename == thumbs-up{
 			$char: "\E033";
+		}
+
+	
+		@if $filename == upload{
+			$char: "\E034";
+		}
+
+	
+		@if $filename == user-delete-solid{
+			$char: "\E035";
+		}
+
+	
+		@if $filename == user-delete{
+			$char: "\E036";
+		}
+
+	
+		@if $filename == user-solid{
+			$char: "\E037";
+		}
+
+	
+		@if $filename == user{
+			$char: "\E038";
+		}
+
+	
+		@if $filename == users-solid{
+			$char: "\E039";
+		}
+
+	
+		@if $filename == users{
+			$char: "\E03A";
 		}
 
 	
@@ -442,6 +491,9 @@ $unicode-users: "\E033";
 	}
 }
 
+.lunacon-address-book {
+	@include lunacon(address-book);
+}
 .lunacon-basket-solid {
 	@include lunacon(basket-solid);
 }
@@ -508,6 +560,12 @@ $unicode-users: "\E033";
 .lunacon-dailer {
 	@include lunacon(dailer);
 }
+.lunacon-dashboard {
+	@include lunacon(dashboard);
+}
+.lunacon-download {
+	@include lunacon(download);
+}
 .lunacon-gift {
 	@include lunacon(gift);
 }
@@ -517,11 +575,20 @@ $unicode-users: "\E033";
 .lunacon-home {
 	@include lunacon(home);
 }
+.lunacon-key {
+	@include lunacon(key);
+}
 .lunacon-lock-open {
 	@include lunacon(lock-open);
 }
 .lunacon-lock {
 	@include lunacon(lock);
+}
+.lunacon-login {
+	@include lunacon(login);
+}
+.lunacon-logout {
+	@include lunacon(logout);
 }
 .lunacon-microphone {
 	@include lunacon(microphone);
@@ -576,6 +643,9 @@ $unicode-users: "\E033";
 }
 .lunacon-thumbs-up {
 	@include lunacon(thumbs-up);
+}
+.lunacon-upload {
+	@include lunacon(upload);
 }
 .lunacon-user-delete-solid {
 	@include lunacon(user-delete-solid);
