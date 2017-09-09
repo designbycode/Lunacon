@@ -1,0 +1,14 @@
+<svg id="navicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.55 135.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0078a0;
+      }
+    </style>
+  </defs>
+  <title>user-solid</title>
+  <g>
+    <ellipse class="cls-1" cx="50.28" cy="35.91" rx="34.91" ry="35.91"/>
+    <path class="cls-1" d="M150.45,141.72V155.3a122.75,122.75,0,0,1-100.55,0V141.72c0-18.14,14.43-33,32.05-33H118.4C136,108.76,150.45,123.58,150.45,141.72Z" transform="translate(-49.9 -30.18)"/>
+  </g>
+</svg>

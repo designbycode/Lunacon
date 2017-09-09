@@ -1,0 +1,11 @@
+<svg id="lock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 105">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009245;
+      }
+    </style>
+  </defs>
+  <title>lock</title>
+  <path class="cls-1" d="M132.18,100.18h-2v-25a30,30,0,0,0-60,0v25h-2a3,3,0,0,0-3,3v44a3,3,0,0,0,3,3h64a3,3,0,0,0,3-3v-44A3,3,0,0,0,132.18,100.18Zm-52-25a20,20,0,1,1,40,0v25h-40Z" transform="translate(-65.18 -45.18)"/>
+</svg>

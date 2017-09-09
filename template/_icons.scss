@@ -1,0 +1,111 @@
+// ==========================================
+// == Luna Framework - Lunacon
+// == AUTHOR: CLAUDE MYBURGH
+// == URL: http://lunaframework.co.za
+// ==========================================
+//
+//
+@font-face {
+	font-family: "<%= fontName %>";
+	src: url('#{$font-path}/lunacon/<%= fontName %>.eot');
+	src: url('#{$font-path}/lunacon/<%= fontName %>.eot?#iefix') format('eot'),
+		url('#{$font-path}/lunacon/<%= fontName %>.woff') format('woff'),
+		url('#{$font-path}/lunacon/<%= fontName %>.ttf') format('truetype'),
+		url('#{$font-path}/lunacon/<%= fontName %>.svg#<%= fontName %>') format('svg');
+}
+
+@mixin <%= cssClass%>-styles() {
+	display: inline-block;
+  font: normal normal normal 14px/1 "<%= fontName %>";
+  font-size: inherit;
+  font-size: inherit;
+	line-height: $base-line-height;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.<%= cssClass%>{
+	@include <%= cssClass%>-styles();
+}
+
+.<%= cssClass%>-fw{
+	width: 1.28571429em;
+  text-align: center;
+}
+
+<% _.each(['x1','x2', 'x3', 'x4', 'x5'], function(i, e) { %>
+  .<%= cssClass%>--size-<%=i %>{
+    font-size: ($base-icon-size * <%= e %>) + $base-icon-size !important;
+    line-height: 1;
+  }
+<% }); %>
+
+
+
+<% _.each(glyphs, function(glyph) { %>
+$unicode-<%= glyph.fileName %>: "\<%= glyph.codePoint %>";
+<% }); %>
+
+
+
+@function <%= cssClass%>-char($filename){
+	$char: "";
+	<%_.each(glyphs, function(glyph){ %>
+		@if $filename == <%= glyph.fileName %>{
+			$char: "\<%= glyph.codePoint %>";
+		}
+
+	<%	});%>
+	@return $char;
+}
+
+@mixin <%= cssClass%>($filename, $insert: before, $extend: true){
+	&::#{$insert}{
+		@if $extend{
+			@extend .<%= cssClass%>;
+		}@else {
+			@include <%= cssClass%>-styles;
+		}
+		content: <%= cssClass%>-char($filename);
+	}
+}
+
+<% _.each(glyphs, function(glyph) { %>.<%= cssClass%>-<%= glyph.fileName %> {
+	@include <%= cssClass%>(<%= glyph.fileName %>);
+}
+<% }); %>
+
+
+
+
+
+.<%= cssClass%>-spin-animation {
+  animation: <%= cssClass%>-spin 2s infinite linear;
+}
+
+
+.<%= cssClass%>-flash-animation {
+  animation: <%= cssClass%>-flash 1s infinite  ease-in-out;
+}
+
+
+@keyframes <%= cssClass%>-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+
+@keyframes <%= cssClass%>-flash {
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

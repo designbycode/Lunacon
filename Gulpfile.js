@@ -25,10 +25,10 @@ const Paths = {
 /* Font Maker
 /********************************/
 gulp.task('icons', ['clean'], () => {
-  return gulp.src(`lunacon/svgicons/**/*.svg`)
+  return gulp.src(`svgicons/**/*.svg`)
     .pipe(iconfontCss({
       fontName: fontName,
-      path: `lunacon/template/_icons.scss`,
+      path: `template/_icons.scss`,
       targetPath: '../../sass/_icons.scss',
       fontPath: 'lunacon/',
       cssClass: 'lunacon'

@@ -1,0 +1,12 @@
+<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.73 100.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009245;
+      }
+    </style>
+  </defs>
+  <title>thumbs-down</title>
+  <path class="cls-1" d="M121.18,116.68h19.75c9.29,0,11.62-15.1,5.81-20.91a14.63,14.63,0,0,0-1.16-13.94s3.49-8.13-3.49-13.94c0,0,5.81-33.69-59.25-8.13C77,62.08,78.19,62.08,78.19,83V103.9c0,5.81,4.65,3.49,11.62,11.62s11.62,10.46,13.94,25.56S140.93,156.19,121.18,116.68Z" transform="translate(-50.18 -50.18)"/>
+  <rect class="cls-1" y="8" width="24" height="53" rx="3" ry="3"/>
+</svg>

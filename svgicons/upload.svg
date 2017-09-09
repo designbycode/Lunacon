@@ -1,0 +1,14 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 179">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00a99d;
+      }
+    </style>
+  </defs>
+  <title>upload</title>
+  <g>
+    <path class="cls-1" d="M186.18,104.18a10,10,0,0,0-10,10v46h-152v-46a10,10,0,0,0-20,0v55a11,11,0,0,0,11,11h170a11,11,0,0,0,11-11v-55A10,10,0,0,0,186.18,104.18Z" transform="translate(-4.18 -1.18)"/>
+    <path class="cls-1" d="M61.49,74.17H90.18v53a10,10,0,0,0,20,0v-53h28.68a3,3,0,0,0,2.6-4.5l-38.68-67a3,3,0,0,0-5.2,0l-38.68,67A3,3,0,0,0,61.49,74.17Z" transform="translate(-4.18 -1.18)"/>
+  </g>
+</svg>
