@@ -15,14 +15,14 @@
 }
 
 @mixin <%= cssClass%>-styles() {
-	display: inline-block;
-  font: normal normal normal 14px/1 "<%= fontName %>";
-  font-size: inherit;
-  font-size: inherit;
-	line-height: $base-line-height;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font: normal normal normal 14px/1 "<%= fontName %>";
+    font-size: inherit;
+    line-height: $base-line-height;
+    vertical-align: middle;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
 }
 

@@ -15,14 +15,14 @@
 }
 
 @mixin lunacon-styles() {
-	display: inline-block;
-  font: normal normal normal 14px/1 "Lunacon";
-  font-size: inherit;
-  font-size: inherit;
-	line-height: $base-line-height;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font: normal normal normal 14px/1 "Lunacon";
+    font-size: inherit;
+    line-height: $base-line-height;
+    vertical-align: middle;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
 }
 
@@ -161,49 +161,47 @@ $unicode-shield: "\E02F";
 
 $unicode-skip-back: "\E030";
 
-$unicode-skip-forward: "\E031";
+$unicode-skip-next: "\E031";
 
-$unicode-skip-next: "\E032";
+$unicode-sound-big: "\E032";
 
-$unicode-sound-big: "\E033";
+$unicode-sound-mute: "\E033";
 
-$unicode-sound-mute: "\E034";
+$unicode-sound-waves: "\E034";
 
-$unicode-sound-waves: "\E035";
+$unicode-sound: "\E035";
 
-$unicode-sound: "\E036";
+$unicode-star-half-solid: "\E036";
 
-$unicode-star-half-solid: "\E037";
+$unicode-star-half: "\E037";
 
-$unicode-star-half: "\E038";
+$unicode-star-solid: "\E038";
 
-$unicode-star-solid: "\E039";
+$unicode-star: "\E039";
 
-$unicode-star: "\E03A";
+$unicode-stop: "\E03A";
 
-$unicode-stop: "\E03B";
+$unicode-thumbs-down-solid: "\E03B";
 
-$unicode-thumbs-down-solid: "\E03C";
+$unicode-thumbs-down: "\E03C";
 
-$unicode-thumbs-down: "\E03D";
+$unicode-thumbs-up-solid: "\E03D";
 
-$unicode-thumbs-up-solid: "\E03E";
+$unicode-thumbs-up: "\E03E";
 
-$unicode-thumbs-up: "\E03F";
+$unicode-upload: "\E03F";
 
-$unicode-upload: "\E040";
+$unicode-user-delete-solid: "\E040";
 
-$unicode-user-delete-solid: "\E041";
+$unicode-user-delete: "\E041";
 
-$unicode-user-delete: "\E042";
+$unicode-user-solid: "\E042";
 
-$unicode-user-solid: "\E043";
+$unicode-user: "\E043";
 
-$unicode-user: "\E044";
+$unicode-users-solid: "\E044";
 
-$unicode-users-solid: "\E045";
-
-$unicode-users: "\E046";
+$unicode-users: "\E045";
 
 
 
@@ -451,113 +449,108 @@ $unicode-users: "\E046";
 		}
 
 	
-		@if $filename == skip-forward{
+		@if $filename == skip-next{
 			$char: "\E031";
 		}
 
 	
-		@if $filename == skip-next{
+		@if $filename == sound-big{
 			$char: "\E032";
 		}
 
 	
-		@if $filename == sound-big{
+		@if $filename == sound-mute{
 			$char: "\E033";
 		}
 
 	
-		@if $filename == sound-mute{
+		@if $filename == sound-waves{
 			$char: "\E034";
 		}
 
 	
-		@if $filename == sound-waves{
+		@if $filename == sound{
 			$char: "\E035";
 		}
 
 	
-		@if $filename == sound{
+		@if $filename == star-half-solid{
 			$char: "\E036";
 		}
 
 	
-		@if $filename == star-half-solid{
+		@if $filename == star-half{
 			$char: "\E037";
 		}
 
 	
-		@if $filename == star-half{
+		@if $filename == star-solid{
 			$char: "\E038";
 		}
 
 	
-		@if $filename == star-solid{
+		@if $filename == star{
 			$char: "\E039";
 		}
 
 	
-		@if $filename == star{
+		@if $filename == stop{
 			$char: "\E03A";
 		}
 
 	
-		@if $filename == stop{
+		@if $filename == thumbs-down-solid{
 			$char: "\E03B";
 		}
 
 	
-		@if $filename == thumbs-down-solid{
+		@if $filename == thumbs-down{
 			$char: "\E03C";
 		}
 
 	
-		@if $filename == thumbs-down{
+		@if $filename == thumbs-up-solid{
 			$char: "\E03D";
 		}
 
 	
-		@if $filename == thumbs-up-solid{
+		@if $filename == thumbs-up{
 			$char: "\E03E";
 		}
 
 	
-		@if $filename == thumbs-up{
+		@if $filename == upload{
 			$char: "\E03F";
 		}
 
 	
-		@if $filename == upload{
+		@if $filename == user-delete-solid{
 			$char: "\E040";
 		}
 
 	
-		@if $filename == user-delete-solid{
+		@if $filename == user-delete{
 			$char: "\E041";
 		}
 
 	
-		@if $filename == user-delete{
+		@if $filename == user-solid{
 			$char: "\E042";
 		}
 
 	
-		@if $filename == user-solid{
+		@if $filename == user{
 			$char: "\E043";
 		}
 
 	
-		@if $filename == user{
+		@if $filename == users-solid{
 			$char: "\E044";
 		}
 
 	
-		@if $filename == users-solid{
-			$char: "\E045";
-		}
-
-	
 		@if $filename == users{
-			$char: "\E046";
+			$char: "\E045";
 		}
 
 	
@@ -718,9 +711,6 @@ $unicode-users: "\E046";
 }
 .lunacon-skip-back {
 	@include lunacon(skip-back);
-}
-.lunacon-skip-forward {
-	@include lunacon(skip-forward);
 }
 .lunacon-skip-next {
 	@include lunacon(skip-next);
