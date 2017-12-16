@@ -18,8 +18,7 @@
     display: inline-block;
     font: normal normal normal 14px/1 "Lunacon";
     font-size: inherit;
-    line-height: $base-line-height;
-    vertical-align: middle;
+
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -27,6 +26,8 @@
 }
 
 .lunacon{
+  line-height: $base-line-height;
+  vertical-align: top;
 	@include lunacon-styles();
 }
 
@@ -117,91 +118,107 @@ $unicode-dashboard: "\E019";
 
 $unicode-download: "\E01A";
 
-$unicode-forward: "\E01B";
+$unicode-facebook: "\E01B";
 
-$unicode-gift: "\E01C";
+$unicode-forward: "\E01C";
 
-$unicode-home-solid: "\E01D";
+$unicode-gift: "\E01D";
 
-$unicode-home: "\E01E";
+$unicode-home-solid: "\E01E";
 
-$unicode-key: "\E01F";
+$unicode-home: "\E01F";
 
-$unicode-lock-open: "\E020";
+$unicode-instagram: "\E020";
 
-$unicode-lock: "\E021";
+$unicode-key: "\E021";
 
-$unicode-login: "\E022";
+$unicode-linkedin: "\E022";
 
-$unicode-logout: "\E023";
+$unicode-list: "\E023";
 
-$unicode-microphone: "\E024";
+$unicode-lock-open: "\E024";
 
-$unicode-moon-solid: "\E025";
+$unicode-lock: "\E025";
 
-$unicode-moon: "\E026";
+$unicode-login: "\E026";
 
-$unicode-navicon: "\E027";
+$unicode-logout: "\E027";
 
-$unicode-pause: "\E028";
+$unicode-microphone: "\E028";
 
-$unicode-pencil: "\E029";
+$unicode-moon-solid: "\E029";
 
-$unicode-play: "\E02A";
+$unicode-moon: "\E02A";
 
-$unicode-search-min: "\E02B";
+$unicode-navicon: "\E02B";
 
-$unicode-search-zoom: "\E02C";
+$unicode-pause: "\E02C";
 
-$unicode-search: "\E02D";
+$unicode-pencil: "\E02D";
 
-$unicode-shield-lock-solid: "\E02E";
+$unicode-play: "\E02E";
 
-$unicode-shield: "\E02F";
+$unicode-search-min: "\E02F";
 
-$unicode-skip-back: "\E030";
+$unicode-search-zoom: "\E030";
 
-$unicode-skip-next: "\E031";
+$unicode-search: "\E031";
 
-$unicode-sound-big: "\E032";
+$unicode-shield-lock-solid: "\E032";
 
-$unicode-sound-mute: "\E033";
+$unicode-shield: "\E033";
 
-$unicode-sound-waves: "\E034";
+$unicode-skip-back: "\E034";
 
-$unicode-sound: "\E035";
+$unicode-skip-next: "\E035";
 
-$unicode-star-half-solid: "\E036";
+$unicode-sound-big: "\E036";
 
-$unicode-star-half: "\E037";
+$unicode-sound-mute: "\E037";
 
-$unicode-star-solid: "\E038";
+$unicode-sound-waves: "\E038";
 
-$unicode-star: "\E039";
+$unicode-sound: "\E039";
 
-$unicode-stop: "\E03A";
+$unicode-star-half-solid: "\E03A";
 
-$unicode-thumbs-down-solid: "\E03B";
+$unicode-star-half: "\E03B";
 
-$unicode-thumbs-down: "\E03C";
+$unicode-star-solid: "\E03C";
 
-$unicode-thumbs-up-solid: "\E03D";
+$unicode-star: "\E03D";
 
-$unicode-thumbs-up: "\E03E";
+$unicode-stop: "\E03E";
 
-$unicode-upload: "\E03F";
+$unicode-tag: "\E03F";
 
-$unicode-user-delete-solid: "\E040";
+$unicode-thumbs-down-solid: "\E040";
 
-$unicode-user-delete: "\E041";
+$unicode-thumbs-down: "\E041";
 
-$unicode-user-solid: "\E042";
+$unicode-thumbs-up-solid: "\E042";
 
-$unicode-user: "\E043";
+$unicode-thumbs-up: "\E043";
 
-$unicode-users-solid: "\E044";
+$unicode-twitter-bird: "\E044";
 
-$unicode-users: "\E045";
+$unicode-upload: "\E045";
+
+$unicode-user-delete-solid: "\E046";
+
+$unicode-user-delete: "\E047";
+
+$unicode-user-solid: "\E048";
+
+$unicode-user: "\E049";
+
+$unicode-users-solid: "\E04A";
+
+$unicode-users: "\E04B";
+
+$unicode-youtube-play-button: "\E04C";
+
+$unicode-youtube: "\E04D";
 
 
 
@@ -339,218 +356,258 @@ $unicode-users: "\E045";
 		}
 
 	
-		@if $filename == forward{
+		@if $filename == facebook{
 			$char: "\E01B";
 		}
 
 	
-		@if $filename == gift{
+		@if $filename == forward{
 			$char: "\E01C";
 		}
 
 	
-		@if $filename == home-solid{
+		@if $filename == gift{
 			$char: "\E01D";
 		}
 
 	
-		@if $filename == home{
+		@if $filename == home-solid{
 			$char: "\E01E";
 		}
 
 	
-		@if $filename == key{
+		@if $filename == home{
 			$char: "\E01F";
 		}
 
 	
-		@if $filename == lock-open{
+		@if $filename == instagram{
 			$char: "\E020";
 		}
 
 	
-		@if $filename == lock{
+		@if $filename == key{
 			$char: "\E021";
 		}
 
 	
-		@if $filename == login{
+		@if $filename == linkedin{
 			$char: "\E022";
 		}
 
 	
-		@if $filename == logout{
+		@if $filename == list{
 			$char: "\E023";
 		}
 
 	
-		@if $filename == microphone{
+		@if $filename == lock-open{
 			$char: "\E024";
 		}
 
 	
-		@if $filename == moon-solid{
+		@if $filename == lock{
 			$char: "\E025";
 		}
 
 	
-		@if $filename == moon{
+		@if $filename == login{
 			$char: "\E026";
 		}
 
 	
-		@if $filename == navicon{
+		@if $filename == logout{
 			$char: "\E027";
 		}
 
 	
-		@if $filename == pause{
+		@if $filename == microphone{
 			$char: "\E028";
 		}
 
 	
-		@if $filename == pencil{
+		@if $filename == moon-solid{
 			$char: "\E029";
 		}
 
 	
-		@if $filename == play{
+		@if $filename == moon{
 			$char: "\E02A";
 		}
 
 	
-		@if $filename == search-min{
+		@if $filename == navicon{
 			$char: "\E02B";
 		}
 
 	
-		@if $filename == search-zoom{
+		@if $filename == pause{
 			$char: "\E02C";
 		}
 
 	
-		@if $filename == search{
+		@if $filename == pencil{
 			$char: "\E02D";
 		}
 
 	
-		@if $filename == shield-lock-solid{
+		@if $filename == play{
 			$char: "\E02E";
 		}
 
 	
-		@if $filename == shield{
+		@if $filename == search-min{
 			$char: "\E02F";
 		}
 
 	
-		@if $filename == skip-back{
+		@if $filename == search-zoom{
 			$char: "\E030";
 		}
 
 	
-		@if $filename == skip-next{
+		@if $filename == search{
 			$char: "\E031";
 		}
 
 	
-		@if $filename == sound-big{
+		@if $filename == shield-lock-solid{
 			$char: "\E032";
 		}
 
 	
-		@if $filename == sound-mute{
+		@if $filename == shield{
 			$char: "\E033";
 		}
 
 	
-		@if $filename == sound-waves{
+		@if $filename == skip-back{
 			$char: "\E034";
 		}
 
 	
-		@if $filename == sound{
+		@if $filename == skip-next{
 			$char: "\E035";
 		}
 
 	
-		@if $filename == star-half-solid{
+		@if $filename == sound-big{
 			$char: "\E036";
 		}
 
 	
-		@if $filename == star-half{
+		@if $filename == sound-mute{
 			$char: "\E037";
 		}
 
 	
-		@if $filename == star-solid{
+		@if $filename == sound-waves{
 			$char: "\E038";
 		}
 
 	
-		@if $filename == star{
+		@if $filename == sound{
 			$char: "\E039";
 		}
 
 	
-		@if $filename == stop{
+		@if $filename == star-half-solid{
 			$char: "\E03A";
 		}
 
 	
-		@if $filename == thumbs-down-solid{
+		@if $filename == star-half{
 			$char: "\E03B";
 		}
 
 	
-		@if $filename == thumbs-down{
+		@if $filename == star-solid{
 			$char: "\E03C";
 		}
 
 	
-		@if $filename == thumbs-up-solid{
+		@if $filename == star{
 			$char: "\E03D";
 		}
 
 	
-		@if $filename == thumbs-up{
+		@if $filename == stop{
 			$char: "\E03E";
 		}
 
 	
-		@if $filename == upload{
+		@if $filename == tag{
 			$char: "\E03F";
 		}
 
 	
-		@if $filename == user-delete-solid{
+		@if $filename == thumbs-down-solid{
 			$char: "\E040";
 		}
 
 	
-		@if $filename == user-delete{
+		@if $filename == thumbs-down{
 			$char: "\E041";
 		}
 
 	
-		@if $filename == user-solid{
+		@if $filename == thumbs-up-solid{
 			$char: "\E042";
 		}
 
 	
-		@if $filename == user{
+		@if $filename == thumbs-up{
 			$char: "\E043";
 		}
 
 	
-		@if $filename == users-solid{
+		@if $filename == twitter-bird{
 			$char: "\E044";
 		}
 
 	
-		@if $filename == users{
+		@if $filename == upload{
 			$char: "\E045";
+		}
+
+	
+		@if $filename == user-delete-solid{
+			$char: "\E046";
+		}
+
+	
+		@if $filename == user-delete{
+			$char: "\E047";
+		}
+
+	
+		@if $filename == user-solid{
+			$char: "\E048";
+		}
+
+	
+		@if $filename == user{
+			$char: "\E049";
+		}
+
+	
+		@if $filename == users-solid{
+			$char: "\E04A";
+		}
+
+	
+		@if $filename == users{
+			$char: "\E04B";
+		}
+
+	
+		@if $filename == youtube-play-button{
+			$char: "\E04C";
+		}
+
+	
+		@if $filename == youtube{
+			$char: "\E04D";
 		}
 
 	
@@ -646,6 +703,9 @@ $unicode-users: "\E045";
 .lunacon-download {
 	@include lunacon(download);
 }
+.lunacon-facebook {
+	@include lunacon(facebook);
+}
 .lunacon-forward {
 	@include lunacon(forward);
 }
@@ -658,8 +718,17 @@ $unicode-users: "\E045";
 .lunacon-home {
 	@include lunacon(home);
 }
+.lunacon-instagram {
+	@include lunacon(instagram);
+}
 .lunacon-key {
 	@include lunacon(key);
+}
+.lunacon-linkedin {
+	@include lunacon(linkedin);
+}
+.lunacon-list {
+	@include lunacon(list);
 }
 .lunacon-lock-open {
 	@include lunacon(lock-open);
@@ -742,6 +811,9 @@ $unicode-users: "\E045";
 .lunacon-stop {
 	@include lunacon(stop);
 }
+.lunacon-tag {
+	@include lunacon(tag);
+}
 .lunacon-thumbs-down-solid {
 	@include lunacon(thumbs-down-solid);
 }
@@ -753,6 +825,9 @@ $unicode-users: "\E045";
 }
 .lunacon-thumbs-up {
 	@include lunacon(thumbs-up);
+}
+.lunacon-twitter-bird {
+	@include lunacon(twitter-bird);
 }
 .lunacon-upload {
 	@include lunacon(upload);
@@ -774,6 +849,12 @@ $unicode-users: "\E045";
 }
 .lunacon-users {
 	@include lunacon(users);
+}
+.lunacon-youtube-play-button {
+	@include lunacon(youtube-play-button);
+}
+.lunacon-youtube {
+	@include lunacon(youtube);
 }
 
 
